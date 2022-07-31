@@ -11,6 +11,7 @@ import Technology from './components/Technology';
 import BackgroundImageMobile from './assets/home/background-home-mobile.jpg';
 import BackgroundImageTablet from './assets/home/background-home-tablet.jpg';
 import BackgroundImageDesktop from './assets/home/background-home-desktop.jpg';
+import Image from './assets/destination/background-destination-mobile.jpg';
 
 function App() {
   const { height, width } = useWindowDimensions();
@@ -26,7 +27,7 @@ function App() {
   }
   
   return (
-    <div className="App" style={{backgroundImage: `url(${BgImage()})`}}>
+    <div className="App" style={{backgroundImage: `url(${Image})`}}>
       <BrowserRouter>
         <Header />
         <Routes>
